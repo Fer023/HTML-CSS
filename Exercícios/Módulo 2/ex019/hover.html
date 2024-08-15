@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        /* 
+        
+        SELETORES PERSONALIZADOS
+
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        /* O codigo DIV:HOVER > P significa que existe um parágrafo dentro da div que está sendo alterado. */
+
+        div:hover {
+            color: red;
+        }
+
+        /* A tag HOVER serve para modificar um elemento quando se passa o mouse por cima. */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>O LOBO VAI COMER...</p>
+    </div>
+    
+</body>
+</html>

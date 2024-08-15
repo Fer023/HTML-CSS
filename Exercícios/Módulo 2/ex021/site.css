@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(153, 40, 40);
+    border-radius: 15px;
+}
+
+header > h1 {
+    padding-top: 25px;
+    text-align: center;
+    color: goldenrod;
+
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+nav > a {
+    padding-left: 20px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+main {
+    background-color: beige;
+    width: 60%;
+    margin-left: 10px;
+    text-align: justify;
+}

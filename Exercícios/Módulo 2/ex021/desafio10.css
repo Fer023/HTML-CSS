@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+ /*
+ É possível criar um elemento :root para selecionar variáveis que podem ser utiliazadas em todo o documento. Ex:
+
+ --cor01: #ebe5c5;
+ --cor02:
+ --cor03:
+
+ --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+
+ Para selecionar uma variável posteriormente, utilize a tag var
+ */
+
+@font-face {
+    font-family: 'bebas';
+    src: url('pacote-projeto-d010/fontes/BebasNeueBold/BebasNeue\ Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    font-family:'bebas', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(180deg, #39CC7A, #0e6433, #0a3b20);
+    width: 100vw;
+
+}
+
+header > h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+ 
+}
+
+header > p {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    max-width: 70%;
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
+nav > a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    transition-duration: 3;
+}
+
+
+/* ----------------------------------- CORPO ----------------------------------- */
+
+
+#main1 {
+    background-color: #b9e9ce;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#section1 {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    margin: auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+}
+
+#section1 > h1 {
+    font-family: 'idroid';
+    color: #12a752;
+    background: linear-gradient(to right, #9ce7bed7, white );
+}
+
+#picture1 > img {
+    width: 70%;
+}
+
+#picture2 > img {
+    width: 70%;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+#section1 > picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+Configurações possíveis para listas:
+
+list-styel-position: inside;
+columns: 2
+
+Sem necessidade de utilizar um <div> para ajustar
+*/
+#section1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#footersec {
+    padding: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #9ce7be69;
+
+}
+
+#footersec > h1 {
+    background-color: #12a752;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px 5px 0% 0px;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#footersec > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 15px;
+    
+}
+
+#footersec > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 25%;
+    max-width: 100%;
+}
+
+/*
+Era possível ter feito todos os links possuírem um símbolo depois sem ter que usar o <svg>, apenas usand o comando
+
+a.externo::after {
+    content: '\1F517'
+}
+*/
+
+a {
+    text-decoration: none;
+    color: #13c965;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    font-style: italic;
+    position: relative;
+    background-color: #0a3b20;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer > p {
+    text-align: center;
+    margin: 0px;
+    font-size: 0.6em;
+}
