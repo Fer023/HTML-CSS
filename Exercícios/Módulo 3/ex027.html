@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            
+        }
+
+        tbody th {
+            text-align: left;
+        }
+
+        .med1 {
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="colgroup">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5"><strong>Exatas</strong></td>
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <th colspan="4">Média de Exatas</th>
+            <th class="med1">0.0</th>
+            <tr>
+                <td rowspan="3"><strong>Humanas</strong></td>
+            </tr>
+            <tr>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <th class="med1">0.0</th>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+<!-- Para selecionar uma coluna específica de uma tabela e alterar sua cor, use o seguinte comando:
+ 
+<colgroup>
+    <col class="amarelo">
+    <col class="vermelho>
+    <col class="amarelo">
+    <col class="vermelho">
+    
+    -->

@@ -28,7 +28,7 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font-variant: small-caps;
+    font-variant: small-caps; /*Capslock mas com diferenciação entre maior e menor*/
     font-family: var(--fonte2);
     font-size: 10vw;
 }
