@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="mobilefirst.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 1,
+          'opsz' 24
+        }
+        </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+            </div>
+            <div id="login">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a) de volta. Preencha com usuário e senha para acessar seu ambiente.</p>
+
+                <form action="#" method="get" autocomplete="on">
+
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="username" id="iname" placeholder="E-mail" required>
+                        <label for="iname"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="password" id="ipass" placeholder="Password" required>
+                        <label for="ipass"></label>
+                    </div>
+
+                    <input id="entrar" class="botoes" type="submit" value="Entrar">
+                    <input class="botoes" type="submit" value="Esqueci minha senha">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

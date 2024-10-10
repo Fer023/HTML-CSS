@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#622675, #36317B, #22636C 50%);
+}
+
+main {
+    background-color: rgb(16, 167, 24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 350px;
+    border-radius: 20px;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    box-shadow: 0px 0px 10px black;
+
+    background-image: url(../imagens/building-supply-chains-1536x1536.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+main section {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+section p {
+    text-align: justify;
+    padding: 10px;
+}
+
+/*-----------------------------Login--------------------------*/
+
+div {
+    width: 93%;
+    height: 30px;
+    background-color: #7050FA;
+    margin-left: 7px;
+    border-radius: 10px;
+    border: 4px solid #7050FA;
+    margin-top: 5px;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    background-color: #9fe1e7;
+    border-radius: 5px;
+    transition: bac;
+}
+
+input:focus {
+    background-color: white;
+}
+
+span {
+    padding: 5px;
+    color: white;
+}
+
+/*---------------------------Buttons-------------------------------*/
+
+input#enter {
+    height: 30px;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 7px;
+    background-color: #29be99;
+    color: white;
+}
+
+input#enter:hover {
+    background-color: #0d9daa;
+    color: black;
+}
+
+input#pass-request{
+    height: 30px;
+    margin-top: 2px;
+    width: 95%;
+    margin-left: 7px;
+    background-color: white;
+}
+
+input#pass-request:hover {
+    background-color: #55e3f079;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        background-color: white;
+    }
+    
+}
