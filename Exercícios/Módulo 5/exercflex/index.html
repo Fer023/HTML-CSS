@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            background-color: slategray;
+            height: 10vh;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
+            padding-left: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+        }
+
+        nav div {
+            background-color: black;
+            color: white;
+            margin: 5px 2px 10px 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        main {
+            background-color: white;
+            margin: auto;
+            width: 90vw;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        p {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        h2 {
+            padding-top: 10px;
+            padding-left: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        div:hover {
+            color: black;
+            background-color: white;
+            transition-duration: 0.35s;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 560px) {
+            header {
+                flex-flow: column;
+                height: 370px;
+            }
+            
+            nav {
+                flex-flow: column;
+                align-items: stretch;
+                text-align: center;
+                padding: 10px;
+            }
+
+            h1 {
+                justify-content: center;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Meu Site</h1>
+            <nav>
+                <a href=""><div>Opção 1</div></a>
+                <a href=""><div>Opção 2</div></a>
+                <a href=""><div>Opção 3</div></a>
+                <a href=""><div>Opção 4</div></a>
+                <a href=""><div>Opção 5</div></a>
+                <a href=""><div>Opção 6</div></a>
+            </nav>
+        </header>
+        <main>
+            <h2>Teste com flexbox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo ullam, corrupti, doloribus praesentium similique tempora alias necessitatibus quos tenetur enim reiciendis culpa aliquid eveniet. Repudiandae quaerat explicabo ipsam ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis alias cum adipisci consequuntur nulla tempore nisi repudiandae ipsum, similique atque ut velit distinctio, quibusdam facere ratione nemo corporis eum sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima corrupti, doloribus accusamus animi facere, deleniti eum ex quaerat porro rerum. Accusamus labore tempora quos, molestias eaque nemo expedita provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cumque reprehenderit odio, recusandae mollitia exercitationem. Placeat laudantium, alias corporis aliquam omnis provident eligendi ipsam, cumque fuga possimus architecto quisquam numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam dolorum facere. Itaque nam commodi numquam maiores, fugiat voluptatem quibusdam totam vero deleniti harum perspiciatis id. Ex deserunt doloremque eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquam est nam, beatae explicabo ipsum amet iure itaque commodi aspernatur dicta. Est temporibus dolorum totam ea assumenda dignissimos! Cumque, aliquam!
+            </p>
+        </main>
+</body>
+</html>

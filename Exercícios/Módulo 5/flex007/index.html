@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightpink;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+    
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Conteudo grande</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo maior que o primeiro</div>
+        <div class="item">E</div>
+        <div class="item">Conteúdo gigante capaz de absorver a humanidade inteira em questão de segundos</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
